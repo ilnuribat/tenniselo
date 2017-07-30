@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "tenniselo",
+    "password": "tenniselo",
+    "database": "tenniselo",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "tenniselo",
+    "password": "tenniselo",
+    "database": "tenniselo",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "tenniselo",
+    "password": "tenniselo",
+    "database": "tenniselo",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
