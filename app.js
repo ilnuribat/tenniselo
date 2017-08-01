@@ -4,8 +4,7 @@ const new_gamer = require('./new_gamer');
 
 const expectHandlers = {
   new_gamer,
-}
-
+} 
  
 const app = new Telegraf(process.env.BOT_TOKEN);
 app.state = {};
@@ -15,6 +14,9 @@ app.command('start', ({ from, reply }) => {
   return reply(`Добро пожаловать!
     Этот бот будет вести рейтинг Эло 
       по настольному теннису`);
+});
+app.command('help', (ctx) => {
+  ctx.reply('You can add gamers with command /add_gamer');
 });
 app.use((ctx, next) => {
   if (ctx.from.id === 249377954) {
